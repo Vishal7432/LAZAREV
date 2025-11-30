@@ -8,7 +8,7 @@
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -29,7 +29,6 @@ nav {
   background-color: #111;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid #222;
 }
 #nav-links {
   display: flex;
@@ -61,11 +60,44 @@ nav {
 }
 
 #nav-bottom {
-  background-color: red;
-  height: 100%;
-  width: 100%;
+  height: 0%;
+  width: 88%;
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0vw 16vw;
+  padding-left: 18vw;
+  transition: all 0.65s ease-in-out;
+}
+
+.bottom-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  opacity: 0;
+}
+
+.bottom-div h5 {
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.bottom-div h5 span {
+  font-size: 0.7vw;
+  font-family: 500;
+}
+
+nav:hover #nav-bottom {
+  height: 100px;
+  bottom: -100px;
+  background-color: #111;
+  transition: all 0.65s ease-in-out;
 }
 
 #page1 {
